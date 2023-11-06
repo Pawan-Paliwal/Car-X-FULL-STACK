@@ -1,0 +1,62 @@
+.form-control {
+  margin: 1rem 0;
+}
+
+.form-control label,
+.form-control input,
+.form-control textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.25rem;
+}
+
+.form-control input,
+.form-control textarea {
+  border: 1px solid #a1a1a1;
+  font: inherit;
+  border-radius: 2px;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+  outline-color: #00695c;
+}
+.product-form{
+  padding: 2%;
+  background-color: #acd8ec;
+  margin-top: 2%;
+}
+.title{
+  font-weight: 600;
+  font-size: 111%;
+  font-family: 'Ysabeau SC', sans-serif;
+}
+.error-op{
+  color: red;
+  font-weight: 600;
+}
+.main-sell{
+  background-image: url('https://t4.ftcdn.net/jpg/03/08/44/53/360_F_308445331_ZZinysRse5xOZacNTnoQqG24TAy7ftZ5.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.done{
+  background-color: #2e751e;
+}
+.p{
+  color: white;
+  padding-left: 10%;
+  padding-top: 2%;
+  font-size: x-large;
+  font-family: 'Bayon', sans-serif;
+}
+#pawan{
+margin: 0px;
+padding: 0px;
+color: black;
+width: 23%;
+height: 12vh;
+margin-left: 7%;
+border-radius: 13px;
+background-color: red;
+}

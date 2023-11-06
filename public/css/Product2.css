@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Bayon&family=Exo+2:wght@500;600&family=Fresca&family=Lato:wght@100&family=Ledger&family=Open+Sans:wght@300;500&family=Oswald:wght@500&family=Quicksand:wght@600;700&family=Roboto+Condensed:wght@200&family=Rubik:wght@500&family=Teko:wght@500&family=Work+Sans:ital,wght@1,500&family=Ysabeau+SC:wght@200;700&display=swap');
+
+#section-2{
+    font-size: 1rem;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-top: 1rem
+}
+.new-car-tag{
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.new-car-span{
+    color: rgb(2, 136, 209);
+    cursor: pointer;
+}
+.p-brand{
+    
+    margin-top: 56px;
+}
+
+#firstOne{
+    margin-top: 41px;
+}
+.prod-dis{
+    display: flex;
+    height: 33vh;
+    width: 42vw;
+    margin-bottom: 11px;
+}
+.first-one-dis{
+    margin-left: 3rem;
+}
+.dis-p{
+margin-left: 19px;
+}
+.dis-price{
+    font-family: 'Work Sans', sans-serif;
+}
+.name{
+    cursor: pointer;
+}
+#webfow{
+    padding-left: 16%;
+    margin-bottom: 18px;
+    padding-right: 9%;
+   margin-top: 9%;
+  
+}
+.cart-2-t{
+    width: 32%;
+    background-color: #fff;
+    margin-right: 10px;
+    max-height: 28rem;
+    min-width: 24rem;
+}
+.mers{
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+.about{
+    width: 100%;
+    /* margin-left: 17rem; */
+    font-family: 'Open Sans', sans-serif;
+}
+.m-123{
+    margin-bottom: 35px;
+}
+.learn-m{
+     cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+    .first-one-dis {
+        margin-left: 0rem;
+    }
+    .aligh{
+        height: 32vh;
+        width: 100vw;
+    }
+}

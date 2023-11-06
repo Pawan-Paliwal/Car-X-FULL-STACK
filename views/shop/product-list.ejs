@@ -1,0 +1,427 @@
+<%- include('../includes/head.ejs') %> <%- include('../includes/navigation.ejs')
+%>
+
+<section id="section-2">
+  <div class="new-car">
+    <h1 class="new-car-tag">New Cars</h1>
+    <p>
+      Are you planning on buying a new car? Well, we know that with so many
+      options available out there, it gets really difficult to find a good car
+      which suits your need. Hence, we have put together a complete list of new
+      cars. Maruti Suzuki, Tata and Hyundai are the 3 most popular car brands.
+      The 5 most popular cars are
+      <span class="new-car-span"
+        >Tata Nexon, Maruti Suzuki Fronx, Hyundai Exter, Mahindra Scorpio
+        N</span
+      >
+      and <span class="new-car-span">Mahindra Thar</span>.
+    </p>
+  </div>
+</section>
+
+<section id="firstOne">
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4 m--7 first-one-dis">
+        <% for (let product of prods) { %>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full c-8 prod-dis">
+          <a class="block relative h-48 rounded overflow-hidden aligh">
+            <img
+              alt="ecommerce"
+              class="object-cover object-center w-full h-full block"
+              src="/<%= product.imageUrl %>"
+            />
+          </a>
+          <div class="mt-4 dis-p">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+              Avg. Ex-Showroom price
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium name">
+                <a href="/products/<%= product._id %>"><%= product.title %></a>
+                
+            </h2>
+            <p class="mt-1 dis-price">Rs <%= product.price %> Cr Estimated Price</p>
+          </div>
+        </div>
+        <% } %>
+        <!-- <div class="lg:w-1/4 md:w-1/2 p-4 w-full c-8 prod-dis">
+          <a class="block relative h-48 rounded overflow-hidden aligh">
+            <img
+              alt="ecommerce"
+              class="object-cover object-center w-full h-full block"
+              src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Ferrari/SF90-Stradale/7858/1591619661237/front-left-side-47.jpg?tr=w-456"
+            />
+          </a>
+          <div class="mt-4 dis-p">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+              Avg. Ex-Showroom price
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium name">
+              Ferrari SF90 Stradale
+            </h2>
+            <p class="mt-1 dis-price">Rs.7.50 Cr Get On Road Price</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full c-8 prod-dis">
+          <a class="block relative h-48 rounded overflow-hidden aligh">
+            <img
+              alt="ecommerce"
+              class="object-cover object-center w-full h-full block"
+              src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Rolls-Royce/Ghost/8051/1601280317407/front-left-side-47.jpg?tr=w-456"
+            />
+          </a>
+          <div class="mt-4 dis-p">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+              Avg. Ex-Showroom price
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium name">
+              Rolls-Royce Ghost
+            </h2>
+            <p class="mt-1 dis-price">Rs.6.95 - 7.95 Cr Get On Road Price</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full c-8 prod-dis">
+          <a class="block relative h-48 rounded overflow-hidden aligh">
+            <img
+              alt="ecommerce"
+              class="object-cover object-center w-full h-full block"
+              src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Bentley/Continental/7771/1676965640042/front-left-side-47.jpg?tr=w-456"
+            />
+          </a>
+          <div class="mt-4 dis-p">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+              Avg. Ex-Showroom price
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium name">
+              Bentley Continental
+            </h2>
+            <p class="mt-1 dis-price">Rs.5.23 - 8.45 Cr Get On Road Price</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full c-8 c-0 prod-dis">
+          <a class="block relative h-48 rounded overflow-hidden aligh">
+            <img
+              alt="ecommerce"
+              class="object-cover object-center w-full h-full block"
+              src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Lamborghini/Urus/10636/1690010693541/front-left-side-47.jpg?tr=w-456"
+            />
+          </a>
+          <div class="mt-4 dis-p">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+              Avg. Ex-Showroom price
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium name">
+              Lamborghini Urus
+            </h2>
+            <p class="mt-1 dis-price">Rs.4.18 - 4.22 Cr Get On Road Price</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full c-8 c-0 prod-dis">
+          <a class="block relative h-48 rounded overflow-hidden aligh">
+            <img
+              alt="ecommerce"
+              class="object-cover object-center w-full h-full block"
+              src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Land-Rover/Range-Rover/9018/1676541159356/front-left-side-47.jpg?tr=w-456"
+            />
+          </a>
+          <div class="mt-4 dis-p">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+              Avg. Ex-Showroom price
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium name">
+              Land Rover Range Rover
+            </h2>
+            <p class="mt-1 dis-price">Rs.2.39 - 4.17 Cr Get On Road Price</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full c-8 c-0 prod-dis">
+          <a class="block relative h-48 rounded overflow-hidden aligh">
+            <img
+              alt="ecommerce"
+              class="object-cover object-center w-full h-full block"
+              src="https://stimg.cardekho.com/images/carexteriorimages/630x420/BMW/XM/10570/1689672872537/front-left-side-47.jpg?tr=w-456"
+            />
+          </a>
+          <div class="mt-4 dis-p">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+              Avg. Ex-Showroom price
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium name">
+              BMW XM
+            </h2>
+            <p class="mt-1 dis-price">Rs.2.60 Cr Get On Road Price</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full c-8 c-0 prod-dis">
+          <a class="block relative h-48 rounded overflow-hidden aligh">
+            <img
+              alt="ecommerce"
+              class="object-cover object-center w-full h-full block"
+              src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Land-Cruiser/8448/1623313668941/front-left-side-47.jpg?tr=w-456"
+            />
+          </a>
+          <div class="mt-4 dis-p">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+              Avg. Ex-Showroom price
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium name">
+              Toyota Land Cruiser 300
+            </h2>
+            <p class="mt-1 dis-price">Rs.2.10 Cr Get On Road Price</p>
+          </div>
+        </div> -->
+       
+      </div>
+      <%- include('../includes/pagination.ejs', {currentPage: currentPage, nextPage: nextPage, previousPage: previousPage, lastPage: lastPage, hasNextPage: hasNextPage, hasPreviousPage: hasPreviousPage}) %>
+    </div>
+  
+  
+
+    <div class="brand-displayed">
+      <div class="card p-brand" id="Brand">
+        <div class="card-body">
+          <h5 class="card-title" id="popular">Popular Brands</h5>
+          <div>
+            <div class="images logo-Brand1 icon-p">
+              <div class="card mb-3 c-5">
+                <div class="card-body">
+                  <img
+                    src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/mg.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="card mb-3 c-5">
+                <div class="card-body">
+                  <img
+                    src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/tata.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="card mb-3 c-5">
+                <div class="card-body">
+                  <img
+                    src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/kia.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="card mb-3 c-5">
+                <div class="card-body">
+                  <img
+                    src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/toyota.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="card mb-3 c-5">
+                <div class="card-body">
+                  <img
+                    src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/skoda.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="card mb-3 c-5">
+                <div class="card-body">
+                  <img
+                    src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/honda.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="images logo-Brand1 icon-p">
+              <div class="card mb-3 c-5">
+                <div class="card-body">
+                  <img
+                    src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/renault.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="card mb-3 c-5">
+                <div class="card-body">
+                  <img
+                    src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/mahindra.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="card mb-3 c-5">
+                <div class="card-body">
+                  <img
+                    src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/volkswagen.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="card mb-3 c-5">
+                <div class="card-body">
+                  <img
+                    src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/bmw.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="card mb-3 c-5">
+                <div class="card-body">
+                  <img
+                    src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/citroen.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="card mb-3 c-5">
+                <div class="card-body">
+                  <img
+                    src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/nissan.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <p id="viewmore">View More</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <img src=" " alt="" id="webfow" class="wefo" />
+
+  <main>
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col">
+          <div class="h-1 bg-gray-200 rounded overflow-hidden">
+            <div class="w-24 h-full bg-indigo-500"></div>
+          </div>
+          <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12 m-123">
+            <h1
+              class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0"
+            >
+              Automatic Cars
+            </h1>
+            <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0 about">
+              Are you planning on buying a automatic car? Well, we know that
+              transmission is one of the most crucial things while buying a car
+              and with so many options available out there, it gets really
+              difficult to find a good car which suits your pocket. Hence, we
+              have put together a complete list of best automatic
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 mers">
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6 cart-2-t">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="https://imgd.aeplcdn.com/664x374/n/cw/ec/163327/amg-c-43-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80"
+              />
+            </div>
+            <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+              Mercedes-Benz AMG C 43 Price
+            </h2>
+            <p class="text-base leading-relaxed mt-2">
+              The on-road price of Mercedes-Benz AMG C 43 base model is Rs.
+              98.00 Lakh which includes a registration cost of Rs. 1030000.2000
+            </p>
+            <a class="text-indigo-500 inline-flex items-center mt-3 learn-m"
+              >Learn More
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-4 h-4 ml-2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6 cart-2-t">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="https://imgd.aeplcdn.com/664x374/n/cw/ec/54437/wrangler-exterior-right-front-three-quarter-52.jpeg?isig=0&q=80"
+              />
+            </div>
+            <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+              Jeep Wrangler
+            </h2>
+            <p class="text-base leading-relaxed mt-2">
+              The Wrangler is an iconic brand and has a legion of committed fans
+              for all the good reasons. It's a high-riding off-roader with a lot
+              of character and everyday usability.
+            </p>
+            <a class="text-indigo-500 inline-flex items-center mt-3 learn-m"
+              >Learn More
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-4 h-4 ml-2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6 cart-2-t">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="https://imgd.aeplcdn.com/664x374/n/cw/ec/44709/fortuner-exterior-right-front-three-quarter-20.jpeg?isig=0&q=80"
+              />
+            </div>
+            <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+              Toyota Fortuner
+            </h2>
+            <p class="text-base leading-relaxed mt-2">
+              Toyota Fortuner price for the base model starts at Rs. 33.43 Lakh
+              and the top model price goes upto Rs. 51.44 Lakh (Avg.
+              ex-showroom). Fortuner price for 7 variants is listed below.
+            </p>
+            <a class="text-indigo-500 inline-flex items-center mt-3 learn-m"
+              >Learn More
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-4 h-4 ml-2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ 
+
+  <script>
+        let image = document.getElementById('webfow');
+        let images = ['/src/1.png','/src/3.png','/src/4.png',]
+ 
+        setInterval(function(){
+         let random = Math.floor(Math.random()*4);
+         image.src=images[random]
+        },2000)
+    </script> 
+</section>
+<%- include('../includes/footer.ejs') %>

@@ -1,0 +1,64 @@
+<%- include('../includes/head.ejs') %> <%- include('../includes/navigation.ejs')
+%>
+<section class="text-gray-600 body-font" style="    margin-top: 5%;">
+  <div class="container px-5 py-24 mx-auto">
+    <% if (prods.length > 0) { %>
+    <div class="flex flex-wrap -m-4 m--7">
+      <% for (let product of prods) { %>
+      <article class="lg:w-1/4 md:w-1/2 p-4 w-full c-8 mp-4">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img
+            alt="ecommerce"
+            class="object-cover object-center w-full h-full block"
+            src="/<%= product.imageUrl %>"
+          />
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+            CATEGORY
+          </h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">
+            <a href="/products"><%= product.title %></a>
+          </h2>
+          <p class="mt-1"><%= product.description %></p>
+        </div>
+        <div class="card__actions">
+            <a href="/admin/edit-product/<%= product._id %>?edit=true" class="btn orser-n"
+              >Edit</a
+            >
+            <input type="hidden" value="<%= product._id %>" name="productId" />
+            <button class="pawan"  type="button" onclick="deleteProduct(this)" style="margin: 0px;
+            padding: 0px;
+            color: black;
+            width: 23%;
+            height: 5vh;
+            margin-left: 4%;
+            font-weight: 500;
+            border-radius: 13px;
+            background-color: red;">
+              Delete
+            </button>
+          </div>
+      </article>
+      <% } %>
+    </div>
+    <% } else { %>
+        <div class="container fi">
+            <div class="main">
+              <div class="card32">
+                <h4 class="card-title id-3" style="height: 2rem;">You didn't sell anything .</h4>
+              </div>
+              <div class="center">
+                <img src="/src/cart.png" alt="image" class="img-cart" />
+                <h6  class="id-3">Sell item</h6>
+                <button class="btn btn-primary"  ><a href="/admin/add-product">shop now</a></button>
+              </div>
+            </div>
+          </div>
+      <% } %>
+  </div>
+</section>
+
+<script src="/js/admin.js"></script>
+
+<%- include('../includes/footer.ejs') %>

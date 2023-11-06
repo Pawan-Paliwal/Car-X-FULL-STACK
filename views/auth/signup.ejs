@@ -1,0 +1,42 @@
+
+
+<%- include('../includes/head.ejs') %>
+<%- include('../includes/navigation.ejs') %>
+<div class="login-wrap">
+    <div class="login-html">
+      <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign Up</label>
+      <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+      <div class="login-form">
+        <div class="sign-in-htm">
+            <% if(errorMessage) {%>
+                <div class="error-op"><span  class="error-op"><%= errorMessage%></span></div>
+                <%}%>
+            <form class="login-form" action="/signup" method="POST" novalidate>
+                <div class="form-control">
+                    <label for="email" class="label">E-Mail</label>
+                    <input type="email" name="email" id="email"  value="<%=oldInput.email%>" class="input">
+                </div>
+                <div class="form-control">
+                    <label for="password" class="label">Password</label>
+                    <input type="password" name="password" id="password"  value="<%=oldInput.password%>"  class="input">
+                </div>
+                <div class="form-control">
+                    <label for="confirmPassword"  class="label">Confirm Password</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" value="<%=oldInput.confirmPassword%>"  >
+                </div>
+                <div class="group">
+                    <input class="btn personal" type="submit" value="Sign In">
+                  </div>
+            </form>
+         
+         
+          <div class="hr"></div>
+          <div class="foot-lnk">
+            <a href="/reset">Forgot Password?</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <%- include('../includes/footer.ejs') %>

@@ -1,0 +1,62 @@
+<%- include('../includes/head.ejs') %> <%- include('../includes/navigation.ejs')
+%>
+<main>
+    
+  <% if (products.length > 0) { %>
+  <div class="container px-5 py-24 mx-auto m-top">
+    <div class="flex flex-wrap -m-4 m--7 first-one-dis m-top-marginb">
+      <% products.forEach(p => { %>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full c-8 prod-dis">
+        <a class="block relative h-48 rounded overflow-hidden aligh">
+          <img
+            alt="ecommerce"
+            class="object-cover object-center w-full h-full block"
+            src="/<%= p.productId.imageUrl %>"
+          />
+        </a>
+        <div class="mt-4 dis-p">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+            Avg. Ex-Showroom price
+          </h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium name">
+            <a><%= p.productId.title %></a>
+            <h2 class="id-3">Quantity: <%= p.quantity %></h2>
+          </h2>
+          <p class="mt-1 dis-price">
+            Rs <%= p.productId.price %> Cr Estimated Price
+          </p>
+          <form action="/cart-delete-item" method="POST">
+            <input
+              type="hidden"
+              value="<%= p.productId._id %>"
+              name="productId"
+            />
+            <button class="btn danger delet id-3 orser-n" type="submit">Delete</button>
+          </form>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+  <hr />
+  <div class="centered order-n">
+    <a class="btn orser-n" href="/checkout">Order Now!</a>
+  </div>
+
+  <% } else { %>
+    <div class="container fi">
+        <div class="main">
+          <div class="card32">
+            <h4 class="card-title id-3" style="height: 2rem;">Missing Cart items?</h4>
+          </div>
+          <div class="center">
+            <img src="src/cart.png" alt="" class="img-cart" />
+            <h5 class="id-3">Your Cart is empty</h5>
+            <h6  class="id-3">Add item to shop now</h6>
+            <button class="btn btn-primary"  ><a href="/products">shop now</a></button>
+          </div>
+        </div>
+      </div>
+  <% } %>
+</main>
+<%- include('../includes/footer.ejs') %>

@@ -1,0 +1,190 @@
+<!-- <div class="backdrop"></div>
+<header class="main-header">
+    <button id="side-menu-toggle">Menu</button>
+    <nav class="main-header__nav">
+        <ul class="main-header__item-list">
+            <li class="main-header__item">
+                <a class="<%= path === '/' ? 'active' : '' %>" href="/">Shop</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/products' ? 'active' : '' %>" href="/products">Products</a>
+            </li>
+            <% if (isAuthenticated) { %>
+                <li class="main-header__item">
+                    <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart">Cart</a>
+                </li>
+                <li class="main-header__item">
+                    <a class="<%= path === '/orders' ? 'active' : '' %>" href="/orders">Orders</a>
+                </li>
+                <li class="main-header__item">
+                    <a class="<%= path === '/admin/add-product' ? 'active' : '' %>" href="/admin/add-product">Add Product
+                    </a>
+                </li>
+                <li class="main-header__item">
+                    <a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">Admin Products
+                    </a>
+                </li>
+            <% } %>
+        </ul>
+        <ul class="main-header__item-list">
+            <% if (!isAuthenticated) { %>
+                <li class="main-header__item">
+                    <a class="<%= path === '/login' ? 'active' : '' %>" href="/login">Login</a>
+                </li>
+                <li class="main-header__item">
+                    <a class="<%= path === '/signup' ? 'active' : '' %>" href="/signup">Signup</a>
+                </li>
+            <% } else { %>
+                <li class="main-header__item">
+                    <form action="/logout" method="post">
+                       
+                        <button type="submit">Logout</button>
+                    </form>
+                </li>
+            <% } %>
+        </ul>
+    </nav>
+</header>
+
+<nav class="mobile-nav">
+    <ul class="mobile-nav__item-list">
+        <li class="mobile-nav__item">
+            <a class="<%= path === '/' ? 'active' : '' %>" href="/">Shop</a>
+        </li>
+        <li class="mobile-nav__item">
+            <a class="<%= path === '/products' ? 'active' : '' %>" href="/products">Products</a>
+        </li>
+        <% if (isAuthenticated) { %>
+            <li class="mobile-nav__item">
+                <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart">Cart</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a class="<%= path === '/orders' ? 'active' : '' %>" href="/orders">Orders</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a class="<%= path === '/admin/add-product' ? 'active' : '' %>" href="/admin/add-product">Add Product
+                </a>
+            </li>
+            <li class="mobile-nav__item">
+                <a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">Admin Products
+                </a>
+            </li>
+        <% } %>
+        <% if (!isAuthenticated) { %>
+            <li class="mobile-nav__item">
+                <a class="<%= path === '/login' ? 'active' : '' %>" href="/login">Login</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a class="<%= path === '/signup' ? 'active' : '' %>" href="/signup">Signup</a>
+            </li>
+        <% } else { %>
+            <li class="mobile-nav__item">
+                <form action="/logout" method="post">
+                    <button type="submit">Logout</button>
+                </form>
+            </li>
+        <% } %>
+    </ul>
+</nav> -->
+
+
+
+<header class="text-gray-600 body-font">
+  <div class="toggle-btn" onclick="myfunct();">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div
+    class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+  >
+    <a
+      class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0"
+    >
+      <img src="/images/car x.jpg" alt="LOGO" class="image-logo" />
+    </a>
+    <nav
+      class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto"
+      id="nav"
+    >
+      <a
+        class="mr-5 hover:text-gray-900 <%= path === '/' ? 'active' : '' %>"
+        href="/"
+      >
+        <span class="material-symbols-outlined icon" id="classnaav">
+          home_app_logo
+        </span>
+        Home
+      </a>
+      <hr /> 
+   
+      <a
+        class="mr-5 hover:text-gray-900 <%= path === '/' ? 'active' : '' %>"
+        href="/products"
+        ><span class="material-symbols-outlined icon classnaav" id="classnaav">
+          no_crash </span
+        >Cars</a
+      >
+      <hr />
+      <% if (isAuthenticated) { %>
+      <a
+        class="mr-5 hover:text-gray-900 <%= path === '/admin/add-product' ? 'active' : '' %>"
+        href="/admin/add-product"
+        ><span class="material-symbols-outlined icon classnaav" id="classnaav">
+          sell </span
+        >Sell Car</a
+      >
+      <hr />
+      <a
+      class="mr-5 hover:text-gray-900 <%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products"
+      ><span class="material-symbols-outlined icon" id="classnaav">
+        local_shipping
+      </span>
+      Your Cars</a
+    >
+    <hr />
+      <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0" id="lo">
+       
+        <a
+          class="mr-5 hover:text-gray-900 svg-header <%= path === '/cart' ? 'active' : '' %>"
+          href="/cart"
+          ><span class="material-symbols-outlined"> shopping_cart </span></a
+        >
+        <a
+          class="mr-5 hover:text-gray-900 svg-header <%= path === '/orders' ? 'active' : '' %>"
+          href="/orders"
+          ><span class="material-symbols-outlined"> orders </span></a
+        >
+        <% } %>
+        <% if (!isAuthenticated) { %>
+        <button class="login-button">
+          <a class="log <%= path === '/login' ? 'active' : '' %>" href="/login"
+            >Login</a
+          >
+        </button>
+
+        <button class="login-button">
+          <a
+            class="log <%= path === '/signup' ? 'active' : '' %>"
+            href="/signup"
+            >signup</a
+          >
+        </button>
+        <% } else { %>
+        <form action="/logout" method="post">
+          <button class="login-button boto" >
+            <a class="log">Logout</a>
+          </button>
+        </form>
+        <% } %>
+      </div>
+    </nav>
+  </div>
+</header>
+<script>
+  function myfunct() {
+    var navbar = document.getElementById("nav");
+    navbar.classList.toggle("show");
+  }
+</script>

@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bayon&family=Lato:wght@100&family=Oswald:wght@500&family=Rubik:wght@500&family=Teko:wght@500&family=Ysabeau+SC:wght@200;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bayon&family=Exo+2:wght@500;600&family=Fresca&family=Lato:wght@100&family=Ledger&family=Open+Sans:wght@300;500&family=Oswald:wght@500&family=Roboto+Condensed:wght@200&family=Rubik:wght@500&family=Teko:wght@500&family=Work+Sans:ital,wght@1,500&family=Ysabeau+SC:wght@200;700&display=swap');
+body{
+    background-color: #bbd7ef;
+  width: 102vw;
+}
+.logo-Brand1{
+  display: flex;
+}
+.c-0{
+  margin-top: 10px;
+
+}
+.c-8{
+  width: 21vw;
+padding: 4px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-right: 1vw;
+  max-height: 21rem;
+  min-width: 18rem;
+}
+*{
+   margin: 0;
+   padding: 0;
+}
+#popular{
+    font-size: 1.3rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  margin-left: 1rem;
+}
+#viewmore{
+    display: flex;
+  justify-content: center;
+  font-size: large;
+  color: #0288d1;
+  padding-bottom: 9px;
+}
+.c-5{
+    margin: 4px 0.8rem 1rem 1rem;
+}
+.c-5 img{
+  width: 12vw;
+  height: 16vh;
+}
+#Brand{
+background-color: #acd8ec;
+width: 90vw;
+   height: 45vh; 
+  margin: 0px auto;
+}
+.middle{
+    display: flex;
+  justify-content: center;
+  height: 15rem;
+  width: 100vw;
+}
+.center-image1{
+  margin-top: 3em;
+  font-size: 1em;
+}
+
+.logo-Brand1 img{
+  max-height: 15rem;
+  min-width: 8rem;
+}
+
+.py-24 {
+  padding-top: 0rem;
+  padding-bottom: 6rem;
+}
+.leading-relaxed{
+  font-family: 'Open Sans', sans-serif;
+}
+.middle img{
+    width: 76vw;
+  height: 16rem;
+  margin-bottom: 39px;
+}
+ .bgpicture{
+  width: 100%;
+  height: 28em;
+  background-image: url(https://stimg.cardekho.com/images/uploadimages/1698605430591/C3_SUV-LAUNCH_1686x548.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+ }
+.s-b:hover{
+   opacity: 0.8;
+}
+.s-b:hover{
+   opacity: 0.8;
+}
+.backto{
+  padding-left: 50%;
+  background-color: rgb(15, 14, 14);
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+.s-b{
+   width: 12%;
+   display: block;
+   margin-bottom: 3.2vh;
+   border-radius: 33px;
+   background-color: #388e3c;
+}
+.s-b a{
+  font-size: 1.3vw;
+  font-family: 'Rubik', sans-serif;
+}
+ 
+.sb-button{
+  padding-top: 10%;
+  padding-left: 14vw;
+}
+.basic{
+  min-width: 19rem;
+  max-height: 19rem;
+}
+.r-4{
+  margin-top: 4rem;
+}
+#err{
+  height: 3rem;
+}
+.p-r{
+  height: 3rem;
+}
+.p-r-5{
+color: #388e3c;
+}
+#text-t{
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 850px){
+  .middle img{
+    width: 93vw;
+}
+.sb-button{
+display: none;
+}
+.bgpicture{
+  height: 70vh;
+}
+}
+@media screen and (max-width:970px) {
+  #Brand{
+    width: 100vw;
+  }
+  .c-5  img{
+    width: 13vw;
+    height: 14vh;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .c-5  img{
+    width: 11vw;
+    height: 30vh;
+  }
+  .middle img{
+    width: 86vw;
+    height: 10rem;
+}
+.toggle-btn{
+  right: 3vw;
+}
+.log{
+padding: 0px;
+}
+.icon-p{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+} 
+
+ #lo{
+  margin-left: 9rem;
+} 
+ .image-logo{
+  margin-right:75vw;
+}
+.mx-auto{
+  padding-bottom:2rem;
+}
+#viewmore{
+  font-size: 1rem;
+}
+.bgpicture{
+  height: 53vh;
+}
+.crousel{
+   display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+.m--7{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+} 
+
+}
+
+
+/* 
+@media screen and (max-width:500px) {
+  
+} */
+ @media screen and (max-width:400px) {
+  .c-5  img{
+    width: 10vw;
+    height: 12vh;
+  }
+  .middle{
+    height: 11rem;
+  }
+  
+  .middle img{
+    height: 7rem;
+    width:83vw ;
+  }
+  .c-5{
+    margin: -10px 0.6rem 0.9rem 0.8rem;
+  }
+  .bgpicture{
+    height: 23vh;
+  }
+
+} 
