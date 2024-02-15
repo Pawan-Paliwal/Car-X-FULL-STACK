@@ -4,7 +4,6 @@ const axios = require("axios");
 const filehelper = require("../util/file");
 const fs = require("fs");
 const path = require("path");
-console.log(req.session.user.userType)
 
 exports.getAddProduct = (req, res, next) => {
   async function fetchImageData(query) {
