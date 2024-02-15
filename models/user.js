@@ -11,6 +11,11 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
+  userType: {
+    type: String,
+    enum: ["user", "admin"],
+    default: "admin",
+  },
   resetToken: String,
   resetTokenExpiration: Date,
   cart: {

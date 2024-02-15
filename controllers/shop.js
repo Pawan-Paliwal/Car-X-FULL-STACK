@@ -9,6 +9,14 @@ const Order = require("../models/order");
 
 const ITEMS_PER_PAGE = 6;
 
+exports.AboutProducts = (req, res, next) => {
+  res.render("shop/about", {
+    path: "/about",
+    pageTitle: "about",
+    isAuthenticated: req.session.isLoggedIn,
+  });
+};
+
 exports.getProducts = (req, res, next) => {
   const page = +req.query.page || 1;
   let totalItems;
@@ -170,12 +178,9 @@ exports.getCheckout = (req, res, next) => {
           return {
             price_data: {
               currency: "usd",
-
               unit_amount: parseInt(Math.ceil(p.productId.price * 100)),
-
               product_data: {
                 name: p.productId.title,
-
                 description: p.productId.description,
               },
             },

@@ -9,6 +9,7 @@ const router = express.Router();
 
 router.get("/", shopController.getIndex);
 
+router.get("/about", shopController.AboutProducts);
 
 router.get("/products", shopController.getProducts);
 

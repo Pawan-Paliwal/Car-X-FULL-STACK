@@ -1,83 +1,183 @@
-@import url('https://fonts.googleapis.com/css2?family=Bayon&family=Exo+2:wght@500;600&family=Fresca&family=Lato:wght@100&family=Ledger&family=Open+Sans:wght@300;500&family=Oswald:wght@500&family=Quicksand:wght@600;700&family=Roboto+Condensed:wght@200&family=Rubik:wght@500&family=Teko:wght@500&family=Work+Sans:ital,wght@1,500&family=Ysabeau+SC:wght@200;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bayon&family=Exo+2:wght@500;600&family=Fresca&family=Lato:wght@100&family=Ledger&family=Open+Sans:wght@300;500&family=Oswald:wght@500&family=Quicksand:wght@600;700&family=Roboto+Condensed:wght@200&family=Rubik:wght@500&family=Teko:wght@500&family=Work+Sans:ital,wght@1,500&family=Ysabeau+SC:wght@200;700&display=swap");
 
-#section-2{
-    font-size: 1rem;
-    margin-left: 7vw;
-    margin-right: 7vw;
-    margin-top: 1rem
+#section-2 {
+  font-size: 1rem;
+  margin-left: 7vw;
+  margin-right: 7vw;
+  margin-top: 1rem;
 }
-.new-car-tag{
-    font-size: 28px;
-    font-weight: 400;
-    font-family: 'Work Sans', sans-serif;
-}
-
-.new-car-span{
-    color: rgb(2, 136, 209);
-    cursor: pointer;
-}
-.p-brand{
-    
-    margin-top: 56px;
+.new-car-tag {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: "Work Sans", sans-serif;
 }
 
-#firstOne{
-    margin-top: 41px;
+.new-car-span {
+  color: rgb(2, 136, 209);
+  cursor: pointer;
 }
-.prod-dis{
+.p-brand {
+  margin-top: 56px;
+}
+
+#firstOne {
+  margin-top: 41px;
+  width: 100vw;
+}
+.prod-dis {
+  display: flex;
+  height: 33vh;
+  width: 42vw;
+  margin-bottom: 11px;
+}
+.first-one-dis {
+  margin-left: 3rem;
+}
+.dis-p {
+  margin-left: 19px;
+}
+.dis-price {
+  font-family: "Work Sans", sans-serif;
+}
+.name {
+  cursor: pointer;
+}
+#webfow {
+  padding-left: 16%;
+  margin-bottom: 18px;
+  padding-right: 9%;
+  margin-top: 9%;
+}
+.topArea {
+  background-color: white;
+  width: 100vw;
+}
+.car-logo {
+  width: 189px;
+  height: 51px;
+  margin: 5px 14px;
+}
+.new-use {
+  display: flex;
+  width: 36vw;
+  justify-content: space-evenly;
+}
+.new-car {
+  height: 30px;
+  width: 152px;
+  text-align: center;
+  margin: 14px 0px;
+}
+.new-car a {
+  font-size: 17px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+.Navbar {
+  display: flex;
+  flex-wrap: wrap;
+}
+.icons {
+  display: flex;
+  width: 218px;
+  justify-content: space-evenly;
+}
+.same-icons {
+  padding: 15px;
+}
+.input222 {
+  height: 44px;
+  border: 1px solid black;
+  width: 30%;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  margin: 8px 10px;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.input222  input {
+    width: 86%;
+    font-size: 15px;
+    padding: 5px 2px;
+    border: none;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+.input222  .fa-search {
+  color: rgb(51, 51, 51);
+  padding: 10px 15px;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: #febd69;
+  border-radius: 0 5px 5px 0;
+}
+.input222  div span {
+  border-radius: 5px 0 0 5px;
+  color: rgb(51, 51, 51);
+  padding: 7px 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.input222  div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid gray;
+  background-color: rgb(236, 234, 234);
+  padding: 5px 0px;
+}
+.cart-2-t {
+  width: 32%;
+  background-color: #fff;
+  margin-right: 10px;
+  max-height: 28rem;
+  min-width: 24rem;
+}
+
+.mers {
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+.about {
+  width: 100%;
+  /* margin-left: 17rem; */
+  font-family: "Open Sans", sans-serif;
+}
+.m-123 {
+  margin-bottom: 35px;
+}
+.learn-m {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .first-one-dis {
+    margin-left: 0rem;
+  }
+  .aligh {
+    height: 32vh;
+    width: 100vw;
+  }
+  .icons {
     display: flex;
-    height: 33vh;
-    width: 42vw;
-    margin-bottom: 11px;
+    width: 100vw;
+    justify-content: space-evenly;
 }
-.first-one-dis{
-    margin-left: 3rem;
-}
-.dis-p{
-margin-left: 19px;
-}
-.dis-price{
-    font-family: 'Work Sans', sans-serif;
-}
-.name{
-    cursor: pointer;
-}
-#webfow{
-    padding-left: 16%;
-    margin-bottom: 18px;
-    padding-right: 9%;
-   margin-top: 9%;
-  
-}
-.cart-2-t{
-    width: 32%;
-    background-color: #fff;
-    margin-right: 10px;
-    max-height: 28rem;
-    min-width: 24rem;
-}
-.mers{
-    flex-wrap: nowrap;
-    overflow: auto;
-}
-.about{
+  .cente {
     width: 100%;
-    /* margin-left: 17rem; */
-    font-family: 'Open Sans', sans-serif;
-}
-.m-123{
-    margin-bottom: 35px;
-}
-.learn-m{
-     cursor: pointer;
-}
-
-@media screen and (max-width:600px) {
-    .first-one-dis {
-        margin-left: 0rem;
-    }
-    .aligh{
-        height: 32vh;
-        width: 100vw;
-    }
+  }
+  .new-car a {
+    font-size: 14px;
+  }
+  .input222 {
+    height: 44px;
+    width: 93%;
+  }
+  .new-use {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+  }
 }

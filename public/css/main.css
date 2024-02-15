@@ -1,4 +1,4 @@
- /* @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 * {
   box-sizing: border-box;
@@ -281,158 +281,310 @@ form {
   }
 } */
 
+@import url("https://fonts.googleapis.com/css2?family=Bayon&family=Lato:wght@100&family=Oswald:wght@500&family=Teko:wght@500&family=Ysabeau+SC:wght@200;700&display=swap");
+#nav {
+  margin: 0px;
+  width: 98vw;
+  margin-left: 23px;
+  background-color: white;
+}
+#lo {
+  margin-left: 19rem;
+}
+.step-into{
+  width: 98vw;
+  margin-top: 8rem;
+  border: none;
+}
+.step
+{
+  margin: 32px 38px;
+  border: none;
+}
+.main-step
+{
+  padding: 12px 12px;
+}
+@media (min-width: 768px) {
+  .col-md-7
+{
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+}
+.step-heading
+{
+  font-weight: 700;
+  font-size: 3.4rem;
+  color: #371e66;
+  line-height: 3.2rem;
+}
+.step-heading span
+{
+  display: flex;
+  justify-content: center;
+}
+.main-step h5
+{
+  font-size: 2rem !important;
+  color: #371e66;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+}
+.step-para
+{
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 20px;
+  font-size: 22px;
+  color: #000000;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.px-3
+{
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+.start
+{
+  display: flex;
+  justify-content: center;
+}
+.start button
+{
+  border-radius: 10rem;
+  font-size: 20px;
+  width: 300px;
+  color: #a92b25;
+  background: #fff;
+  font-family: "Dosis", sans-serif;
+  padding: 7px 20px 9px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid #a92b25;
+  font-weight: 600;
+  transition: 0.6s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.start button:hover{
+  background-color: #a92b25;
+  color: white;
+}
+.main-step
+{
+  padding: 12px 12px;
+}
+@media (min-width: 768px) {
+  .col-md-7
+{
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+}
+.start
+{
+  display: flex;
+  justify-content: center;
+}
+.disply-flex
+{
+  display: flex;
+  padding: 3px 18px;
+}
 
-
-@import url('https://fonts.googleapis.com/css2?family=Bayon&family=Lato:wght@100&family=Oswald:wght@500&family=Teko:wght@500&family=Ysabeau+SC:wght@200;700&display=swap');
-#nav{
-    margin: 0px;
-    width: 72vw;
-  }
-  #lo{
-   margin-left: 18rem;
-  }
-  body{
-    width: 102vw;
-  }
-  button {
-    background-color: #2a8ded;
-    color: #ffffff;
-  }
-.margin-0-t{
+.searcho {
+  height: 44px;
+  border: 1px solid black;
+  width: 53%;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.searcho input {
+  width: 86%;
+  font-size: 15px;
+  padding: 5px 2px;
+  border: none;
+  margin-left: 3px;
+  font-weight: 500;
+  margin-top: 3px;
+}
+.down {
+  height: 22rem;
+  text-align: center;
+  padding-top: 181px;
+}
+.form-btn {
+  display: flex;
+  justify-content: center;
+}
+.searcho .fa-search {
+  color: rgb(255, 255, 255);
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #e53012;
+  border-radius: 0 5px 5px 0;
+}
+body {
+  width: 102vw;
+}
+button {
+  background-color: #2a8ded;
+  color: #ffffff;
+}
+.margin-0-t {
   margin-top: 3%;
 }
-  
-  input,
-  button {
-    font-size: 1em;
-    padding: 1em;
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 5px;
-  }
-  .mr-5:hover{
+
+input,
+button {
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.mr-5:hover {
   background-color: #acd8ec;
   background-color: #acd8ec;
   cursor: pointer;
-  }
-  #nav a{
-    font-family: 'Bayon', sans-serif;
-    font-weight: 300;
-  }
-  .icon{
-    position: relative;
-    top: 6px;
-  }
-  #classnaav{
-    display: none;
-  }
-  #nav{
+}
+
+#nav a {
+  font-family: "Bayon", sans-serif;
+  font-weight: 300;
+}
+.icon {
+  position: relative;
+  top: 6px;
+}
+#classnaav {
+  display: none;
+}
+#nav {
   padding: 0px auto;
-  }
-  .mr-5{
-    padding: 4px;
-    border-radius: 5px;
-  }
-  
-  .image-logo{
+}
+.mr-5 {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.image-logo {
   height: 1.5rem;
-  
-  }
-  header{
-      background-color: #f7f7f7;
-  }
-  .svg-header{
-      margin-top: 8px;
-  }
-  .logo-Brand{
-      display: flex;
-      flex-wrap: wrap;
-  }
-  .mp-4{
-    width: 21vw;
-    padding: 4px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin-right: 1vw;
-    max-height: 21rem;
-    min-width: 18rem;
-  }
+}
+header {
+  background-color: #f7f7f7;
+  width: 100vw;
+}
+.svg-header {
+  margin-top: 8px;
+}
+.logo-Brand {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mp-4 {
+  width: 21vw;
+  padding: 4px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-right: 1vw;
+  max-height: 21rem;
+  min-width: 18rem;
+}
 
-  
-.login-button{
-    width: 4rem;
-    height: 2em;
-    padding-top: 0.3em;
-    margin-top: 0.5em;
-    margin-right: 1%;
-  }
-  .login-button:hover{
-    opacity: 0.7;
-  }
-  .toggle-btn{
-    width: 35px;
-    position: absolute;
-    right: 74px;
-    top: 27px;
-    display: none;
-  }
-  
-  .toggle-btn span{
-    display: inline-block;
-    width: 100%;
-    height: 2px;
-    background-color: rgb(8 58 240);
-    float: left;
-    margin-bottom: 8px;
-  }
+.login-button {
+  margin-bottom: 7px;
+  width: 4rem;
+  height: 2em;
+  background-color: #2a8ded;
+  /* padding-top: 0.3em; */
+  margin-top: 0.5em;
+  margin-right: 1%;
+  color: white;
+}
 
-  @media screen and (max-width:600px){
-    .login-button a{
-        padding: 0px;
-        }
-        .toggle-btn{
-            right: 22px;
-       }
-  }
+.login-button:hover {
+  opacity: 0.7;
+}
+.toggle-btn {
+  width: 35px;
+  position: absolute;
+  right: 74px;
+  top: 27px;
+  display: none;
+}
 
-  @media (max-width:900px) {
-    .toggle-btn{
-      display: block;
-      top: 17px;
-    }
-    #nav{
-       display: none;
-       width: 100%;
-       border-top:  1px solid rgb(8 58 240);
-       padding-top: 2%;
-       margin-top: 2%;
-    }
-    #nav.show{
-      display: block;
-     }
-     .login-button{
-      margin-top: 1.2em;
-     }
-      #nav a{
-      padding: 15px 0px;
-      width: 100%;
-     }
-     #classnaav a span{
-      display: inline;
-    }
-    #classnaav{
-      display: contents;
-    }
-    #nav a:hover{
-       opacity: 0.4;
-    }
-    .login-button a{
+.toggle-btn span {
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(8 58 240);
+  float: left;
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  .login-button a {
     padding: 0px;
-    }
-    #lo{
-       margin-left: 34vw;
-    }
-     /*
+  }
+  .toggle-btn {
+    right: 22px;
+  }
+}
+
+@media (max-width: 900px) {
+  .toggle-btn {
+    display: block;
+    top: 17px;
+  }
+  #nav {
+    display: none;
+    width: 100%;
+    border-top: 1px solid rgb(8 58 240);
+    padding-top: 2%;
+    margin-top: 2%;
+  }
+  #nav.show {
+    display: block;
+  }
+  .login-button {
+    margin-top: 1.2em;
+  }
+  #nav a {
+    padding: 15px 0px;
+    width: 100%;
+  }
+  #classnaav a span {
+    display: inline;
+  }
+  #classnaav {
+    display: contents;
+  }
+  #nav a:hover {
+    opacity: 0.4;
+  }
+  .login-button a {
+    padding: 0px;
+  }
+  #lo {
+    margin-left: 34vw;
+  }
+  /*
      .column{
        width: 50%;
      }
@@ -450,15 +602,15 @@ form {
   header{
     height: 23vh;
   } */
-  }
-  
-  @media screen and (max-width:400px){
-    .toggle-btn{
-         right: 22px;
-    }
-  }
+}
 
-   /*
+@media screen and (max-width: 400px) {
+  .toggle-btn {
+    right: 22px;
+  }
+}
+
+/*
 ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
 */
 
@@ -482,7 +634,7 @@ form {
 
 ::before,
 ::after {
-  --tw-content: '';
+  --tw-content: "";
 }
 
 /*
@@ -502,9 +654,11 @@ html {
   -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -545,7 +699,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /*
@@ -589,7 +743,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -684,9 +839,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -733,7 +888,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 
-[type='search'] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -826,7 +981,8 @@ textarea {
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
 
-input::-moz-placeholder, textarea::-moz-placeholder {
+input::-moz-placeholder,
+textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
@@ -894,7 +1050,9 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -904,19 +1062,19 @@ video {
   --tw-skew-y: 0;
   --tw-scale-x: 1;
   --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position:  ;
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to-position:  ;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
+  --tw-gradient-from-position: ;
+  --tw-gradient-via-position: ;
+  --tw-gradient-to-position: ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
   --tw-ring-color: rgb(59 130 246 / 0.5);
@@ -924,24 +1082,24 @@ video {
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
 }
 
 ::backdrop {
@@ -954,19 +1112,19 @@ video {
   --tw-skew-y: 0;
   --tw-scale-x: 1;
   --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position:  ;
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to-position:  ;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
+  --tw-gradient-from-position: ;
+  --tw-gradient-via-position: ;
+  --tw-gradient-to-position: ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
   --tw-ring-color: rgb(59 130 246 / 0.5);
@@ -974,24 +1132,24 @@ video {
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
 }
 
 .container {
@@ -1238,12 +1396,12 @@ video {
 
 .object-cover {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .object-center {
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 
 .p-2 {
@@ -1251,7 +1409,7 @@ video {
 }
 
 .p-5 {
-  padding: 1.25rem;
+  height: auto;
 }
 
 .p-4 {
@@ -1411,6 +1569,17 @@ video {
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .searcho {
+    width: 96%;
+  }
+  .down p{
+    display: none;
+  }
+  .down {
+    height: 6rem;
   }
 }
 

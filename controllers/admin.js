@@ -1,8 +1,94 @@
 const Product = require("../models/product");
 const { validationResult } = require("express-validator");
+const axios = require("axios");
 const filehelper = require("../util/file");
+const fs = require("fs");
+const path = require("path");
+console.log(req.session.user.userType)
 
 exports.getAddProduct = (req, res, next) => {
+  async function fetchImageData(query) {
+    try {
+      const accessKey = "_1ypAV7xQGdIk_QrXcyhQ4D_nQIS-cuqBXyHgyXitaY";
+      const apiUrl = "https://api.unsplash.com/photos/random";
+      const imageURL = `${apiUrl}?query=${query}&client_id=${accessKey}`;
+      const response = await axios.get(imageURL);
+      if (response.status === 200) {
+        return response.data.urls.full; // Replace 'urls.full' with the actual path to the desired object
+      } else {
+        throw new Error(`Unexpected response status: ${response.status}`);
+      }
+    } catch (error) {
+      console.error(`Error fetching image data: ${error.message}`);
+      throw error;
+    }
+  }
+
+  async function updateFile() {
+    try {
+      const p = path.join(
+        path.dirname(require.main.filename),
+        "Products",
+        "products.json"
+      ); // replace with the actual path
+      const data = await new Promise((resolve, reject) => {
+        fs.readFile(p, (err, data) => {
+          if (err) reject(err);
+          else resolve(data);
+        });
+      });
+
+      let elements = JSON.parse(data);
+
+      // Iterate through each element in the array
+      for (const element of elements) {
+        const query = element.Name;
+        try {
+          const imageURL = await fetchImageData(query);
+          element.image = imageURL;
+          console.log(`Image URL for ${query}: ${imageURL}`);
+        } catch (error) {
+          console.error(`Error fetching image for ${query}: ${error.message}`);
+        }
+      }
+
+      const updatedData = JSON.stringify(elements);
+      fs.writeFile(p, updatedData, (err) => {
+        if (err) {
+          console.error("Error writing file:", err);
+        } else {
+          console.log("File updated successfully");
+        }
+      });
+    } catch (error) {
+      console.error(`Error: ${error.message}`);
+    }
+  }
+
+  // Call the function to update the file
+  updateFile();
+  // const apiUrl =
+  //   "https://api.unsplash.com/photos/random?query=chevy s-10&client_id=ZqwF9tkHc0glv_LpeU9iygzDGIsYaq2t5vMXXzXUcoQ";
+  // async function fetchJsonData(apiUrl) {
+  //   try {
+  //     const response = await axios.get(apiUrl);
+  //     return response.data; // The entire JSON response
+  //   } catch (error) {
+  //     throw new Error(`Error fetching JSON data: ${error.message}`);
+  //   }
+  // }
+  // async function extractObject(apiURL) {
+  //   try {
+  //     const jsonData = await fetchJsonData(apiURL);
+  //     const desiredObject = jsonData.urls.full;
+  //     console.log(desiredObject);
+  //     return desiredObject;
+  //   } catch (error) {
+  //     console.error(`Error: ${error.message}`);
+  //   }
+  // }
+  // Call the function to extract the desired object
+
   res.render("admin/edit-product", {
     pageTitle: "Add Product",
     path: "/admin/add-product",
@@ -12,6 +98,24 @@ exports.getAddProduct = (req, res, next) => {
     errorMessage: null,
   });
 };
+
+// exports.PostToDataBase = (req, res, next) => {
+
+//   // const DataFile = pathData.array.forEach((elem) => {
+//   //   if (
+//   //     !elem == Product.title &&
+//   //     Product.description &&
+//   //     Product.imageUrl &&
+//   //     Product.price
+//   //   ) {
+//   //     const error = new Error(err);
+//   //     error.httpStatusCode = 500;
+//   //     return next(error);
+//   //   }
+//   //   Product.push(elem);
+//   // });
+//   // console.log(DataFile);
+// };
 
 exports.postAddProduct = (req, res, next) => {
   const title = req.body.title;
@@ -178,7 +282,7 @@ exports.getProducts = (req, res, next) => {
         prods: products,
         pageTitle: "Admin Products",
         path: "/admin/products",
-        isAuthenticated:  req.session.isLoggedIn,
+        isAuthenticated: req.session.isLoggedIn,
       });
     })
     .catch((err) => {
