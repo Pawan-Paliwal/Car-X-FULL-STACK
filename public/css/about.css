@@ -56,4 +56,8 @@
     flex-wrap: nowrap;
     overflow: scroll;
   }
+  .about-banner{    height: 28vw;}
+  .background1{
+    width: 100vw;
+  }
 }

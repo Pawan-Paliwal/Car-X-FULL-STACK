@@ -1,16 +1,119 @@
-.a-p{
-    padding-left: 4%;
+.a-p {
+  padding-left: 4%;
 }
-.about-c{
-    padding-top: 4%;
+.about-c {
+  padding-top: 4%;
 }
-.about-b{
-    padding: 7px;
-    width: 100%;
-    height: 38px;
-    /* padding-left: 20vw; */
-    /* margin-left: 20%; */
-    margin-top: 18%;
-    background-color: #2a8ded;
-    margin-left: 32%;
+.flex {
+  margin-bottom: 12px;
+}
+.es-acko-link {
+  display: block;
+  text-decoration: none;
+  color: #0288d1;
+  font-size: 14px;
+  font-weight: 700;
+}
+.es-ad-span {
+  color: #fff;
+  font-size: 8.1px;
+  font-weight: 600;
+  padding: 2px;
+  background-color: #aaa;
+  border-radius: 1.8px;
+  margin-right: 5px;
+}
+.o-fnsUKv {
+  display: inline;
+}
+.ORe58e:not(:disabled) {
+  cursor: pointer;
+  width: 40%;
+  margin-top: 27px;
+
+}
+.o-cWRslo {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.o-eKWNKE {
+  border-radius: 3px;
+}
+.o-cDXfkV {
+  border-color: #e53012;
+}
+.o-ItVGT {
+  border-style: solid;
+}
+.o-bIMsfE {
+  border-width: 1px;
+}
+.o-cXuWIw {
+  background-color: #e53012;
+}
+.o-bVSleT {
+  white-space: nowrap;
+}
+.o-cRLvC {
+  text-decoration: none;
+}
+.o-casNrQ {
+  color: #fff;
+}
+.o-eqqVmt {
+  font-weight: 700;
+}
+.o-bkmzIL {
+  font-size: 15px;
+}
+.o-fdTMrI {
+  height: 40px;
+}
+.o-Hyyko {
+  font-size: 18px;
+}
+.o-fznVCs {
+  margin-bottom: 20px;
+}
+
+.o-fznVqX {
+  padding-left: 20px;
+}
+.o-fznVsN {
+  padding-right: 20px;
+}
+.o-NBTwp {
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.o-dsiSgT {
+  -webkit-align-items: center;
+  align-items: center;
+}
+.o-fcaNGp {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+}
+.es-with-span {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.es-acko-logo {
+  width: 48px;
+  margin-bottom: 2px;
+  margin-right: 4px;
+}
+.about-b {
+  padding: 7px;
+  width: 100%;
+  height: 38px;
+  color: white;
+  /* padding-left: 20vw; */
+  /* margin-left: 20%; */
+  margin-top: 18%;
+  background-color: #2a8ded;
+  margin-left: 32%;
 }

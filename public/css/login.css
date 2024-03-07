@@ -146,4 +146,6 @@
     background-color: #2a8ded;
     border-radius: 46px;
     color: white;
+    height: 42px;
+    cursor: pointer;
   }

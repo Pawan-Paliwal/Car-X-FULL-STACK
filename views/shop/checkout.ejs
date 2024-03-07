@@ -1,34 +1,74 @@
 <%- include('../includes/head.ejs') %>
     <link rel="stylesheet" href="/css/cart.css">
-    
+
+
     </head>
 
     <body>
         <%- include('../includes/navigation.ejs') %>
-        <main>
-            <ul class="cart__item-list">
-                <% products.forEach(p => { %>
-                    <li class="cart__item">
-                        <h1 class="id-3 "><%= p.productId.title %></h1>
-                        <h2  class="id-3 ">Quantity: <%= p.quantity %></h2>
-                    </li>
-                <% }) %>
-            </ul>
-            <div class="centered">
-                <h2 class="order-n sum">Total: <%= totalSum %></h2>
+
+            <div class="order">
+                <div class="order-main">
+                    <p class="order-p">Best car &amp; van rentals from top suppliers</p>
+                    <p class="order-p2">In the automotive industry, where precision and quality reign supreme, selecting
+                        the
+                        best car suppliers
+                        is
+                        not just a matter of preference; it's a strategic imperative. The success of any automobile
+                        manufacturer
+                        hinges not only on the brilliance of its engineering but also on the reliability and excellence
+                        of its
+                        suppliers. In this highly competitive landscape, where innovation is constant and customer
+                        expectations
+                        are
+                        ever-evolving, partnering with the right suppliers can make all the difference</p>
+                </div>
+                <div class="card_flex">
+                    <% products.forEach(p=> { %>
+                        <div class="Card">
+                            <div class="card-pic">
+                                <img src="<%= p.productId.imageUrl %>" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h5>
+                                    <%= p.productId.title %>
+                                </h5>
+                                <p class="card-text" style="display: flex; "><span class="material-symbols-outlined">
+                                        airline_seat_recline_normal
+                                    </span>: Seats <span class="material-symbols-outlined">
+                                        shopping_bag
+                                    </span> :Suitcase &nbsp;<span class="badge text-bg-danger">LIMITED</span>
+                                </p>
+                                <p>
+                                    <%= p.productId.description %>
+                                </p>
+                                <button>Quantity <span>
+                                        <%= p.quantity %>
+                                    </span></button>
+                            </div>
+                        </div>
+                        <% }) %>
+                </div>
+                <div class="ordernow">
+                    <a title="Seal vs Ioniq 5" class="o-cpnuEd o-dGBYL o-fznJPk o-fzptOP o-fzptZB o-eemiLE o-eqqVmt"
+                        href="/compare-cars/byd-seal-vs-hyundai-ioniq-5/"><button type="button" id="order-btn"
+                            class="o-fcaNGp o-dsiSgT o-NBTwp o-bVSleT o-cWRslo  o-cRLvC o-eqqVmt o-eKWNKE   o-ItVGT o-bIMsfE   o-eemiLE o-dAFptd ORe58e o-bCRRBE o-elzeOy IZlEFX o-fzptOP o-fzptZB o-fzpihY o-fzpilm o-bfyaNx o-cQfblS"
+                            iconposition="left" type="button"><span class="o-cCFBmR">Total : <%= totalSum %>CR Proceed
+                                    to pay </span></button></a>
+                    <script src="https://js.stripe.com/v3/"></script>
+                </div>
+
             </div>
-            <div class="centered widt">
-                <button id="order-btn" class="btn">ORDER</button>
-                <script src="https://js.stripe.com/v3/"></script>
-                <script>
-                    var stripe = Stripe('pk_test_51O2Ex7SDBbgf1CR7Vk7kkorHKLP7MqfVqKC7U2N6n0s1kUqGwl7IdJoNfSqoKOYPF0D3RwkXZwNuwZEBY5Nm9E2e00aJEjc1vz');
-                    var orderBtn = document.getElementById('order-btn');
-                    orderBtn.addEventListener('click', function() {
-                        stripe.redirectToCheckout({
-                            sessionId: '<%= sessionId %>'
-                        });
+
+            <script>
+                var stripe = Stripe('pk_test_51O2Ex7SDBbgf1CR7Vk7kkorHKLP7MqfVqKC7U2N6n0s1kUqGwl7IdJoNfSqoKOYPF0D3RwkXZwNuwZEBY5Nm9E2e00aJEjc1vz');
+                var orderBtn = document.getElementById('order-btn');
+                orderBtn.addEventListener('click', function() {
+                    console.log("clicked")
+                    stripe.redirectToCheckout({
+                        sessionId: '<%= sessionId %>'
                     });
-                </script>
-            </div>
-        </main>
-        <%- include('../includes/end.ejs') %>
+                });
+            </script>
+            <%- include('../includes/end.ejs') %>
+                <%- include('../includes/footer.ejs') %>

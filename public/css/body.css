@@ -5,13 +5,48 @@ body {
   background-color: #bbd7ef;
   width: 100vw;
 }
+
+.order {
+  text-align: center;
+}
+.order-main {
+  margin-bottom: 48px;
+}
+.order-car-displayed {
+  display: flex;
+}
+.order-card {
+  max-width: 697px;
+  margin-right: 24px;
+}
+.order-row {
+  display: flex;
+}
+.order-p2 {
+  font-size: 18px;
+}
+.order-body {
+  text-align: justify;
+  margin-left: 23px;
+  margin-right: 19px;
+}
+.order-p {
+  font-size: 27px;
+}
+
+@media screen and (max-width: 500px) {
+  .order-car-displayed {
+    flex-wrap: wrap;
+  }
+}
+
 .logo-Brand1 {
   display: flex;
 }
 .c-0 {
   margin-top: 10px;
 }
-.btn-on{
+.btn-on {
   background: #fff;
   border: 1px solid #e53012;
   border-radius: 2px;
@@ -27,11 +62,16 @@ body {
   padding: 0 5px;
   text-align: center;
   text-overflow: ellipsis;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
   white-space: nowrap;
   width: 92%;
   margin-left: 12px;
   cursor: pointer;
+}
+.Find_Car {
+  color: white;
+  font-size: 29px;
+  font-weight: 500;
 }
 .c-8 {
   width: 21vw;
@@ -41,6 +81,11 @@ body {
   margin-right: 1vw;
   max-height: 23rem;
   min-width: 18rem;
+}
+.find-Car-p {
+  text-align: center;
+  color: #febd69;
+  font-weight: 500;
 }
 * {
   margin: 0;
@@ -97,15 +142,12 @@ body {
 }
 .middle img {
   width: 76vw;
-  height: 16rem;
+  height: 17rem;
   margin-bottom: 39px;
 }
 .bgpicture {
   width: 100vw;
   height: 23em;
-  background-image: url(https://i.pinimg.com/originals/0a/08/bf/0a08bf7397bbf0e13e77cbed3d895f33.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 .s-b:hover {
   opacity: 0.8;
@@ -192,12 +234,12 @@ body {
     width: 11vw;
     height: 30vh;
   }
-#Brand{
-  height: 23vh;
-}
-.brand-displayed{
-  margin-bottom: 285px;
-}
+  #Brand {
+    height: 23vh;
+  }
+  .brand-displayed {
+    margin-bottom: 285px;
+  }
   .main-step h5 {
     /* font-size: 2rem !important; */
     color: #371e66;
@@ -239,11 +281,13 @@ body {
   #lo {
     margin-left: 9rem;
   }
+
   .image-logo {
     margin-right: 75vw;
   }
   .mx-auto {
     padding-bottom: 2rem;
+    padding-left: 0.7rem;
   }
   #viewmore {
     font-size: 1rem;
@@ -272,10 +316,13 @@ body {
     width: 10vw;
     height: 12vh;
   }
+  .Find_Car {
+    font-size: 20px;
+  }
   .middle {
     height: 11rem;
   }
-  .brand-displayed{
+  .brand-displayed {
     margin-bottom: 125px;
   }
   .middle img {
