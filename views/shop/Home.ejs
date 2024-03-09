@@ -1,7 +1,7 @@
 <%- include('../includes/head.ejs') %>
   <%- include('../includes/navigation.ejs') %>
 
-    <main class="bgpicture">
+    <main class="bgpicture" data-aos="zoom-in-right">
       <img src="https://imgd.aeplcdn.com/0x0/cw/static/landing-banners/homepage-d-2021.jpg?v=19042022" alt="">
     </main>
     <!-- main section for the display of the advertisement for the website  -->
@@ -63,7 +63,7 @@
                   <button class="btn-on"><a href="/products">Check January Offers</a></button>
                 </div>
               </div>
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full c-8 c-0 mp-4">
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full c-8 c-0 mp-4" data-aos="zoom-out-up">
                 <a class="block relative h-48 rounded overflow-hidden">
                   <img alt="ecommerce" class="object-cover object-center w-full h-full block"
                     src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Lamborghini/Urus/10636/1690010693541/front-left-side-47.jpg?tr=w-456">
@@ -76,7 +76,7 @@
                   <button class="btn-on"><a href="/products">Check January Offers</a></button>
                 </div>
               </div>
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full c-8 c-0 mp-4">
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full c-8 c-0 mp-4" data-aos="zoom-out-up">
                 <a class="block relative h-48 rounded overflow-hidden">
                   <img alt="ecommerce" class="object-cover object-center w-full h-full block"
                     src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Land-Rover/Range-Rover/9018/1676541159356/front-left-side-47.jpg?tr=w-456">
@@ -89,7 +89,7 @@
                   <button class="btn-on"><a href="/products">Check January Offers</a></button>
                 </div>
               </div>
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full c-8 c-0 mp-4">
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full c-8 c-0 mp-4" data-aos="zoom-out-up">
                 <a class="block relative h-48 rounded overflow-hidden">
                   <img alt="ecommerce" class="object-cover object-center w-full h-full block"
                     src="https://stimg.cardekho.com/images/carexteriorimages/630x420/BMW/XM/10570/1689672872537/front-left-side-47.jpg?tr=w-456">
@@ -101,7 +101,7 @@
                   <button class="btn-on"><a href="/products">Check January Offers</a></button>
                 </div>
               </div>
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full c-8 c-0 mp-4">
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full c-8 c-0 mp-4" data-aos="zoom-out-up">
                 <a class="block relative h-48 rounded overflow-hidden">
                   <img alt="ecommerce" class="object-cover object-center w-full h-full block"
                     src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Land-Cruiser/8448/1623313668941/front-left-side-47.jpg?tr=w-456">
@@ -119,7 +119,7 @@
       </section>
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto flex flex-wrap">
-          <div class="flex flex-wrap -m-4">
+          <div class="flex flex-wrap -m-4" data-aos="zoom-out-right">
             <div class="p-4 lg:w-1/2 md:w-full">
               <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
                 <div
@@ -171,7 +171,7 @@
       <div class="flex flex-wrap -m-4" style="    width: 99vw;
       justify-content: space-evenly;
       margin-bottom: 18px;
-      margin-left: 0px;">
+      margin-left: 0px;" data-aos="zoom-in-up">
         <div class="xl:w-1/4 md:w-1/2 p-4">
           <div class="bg-gray-100 p-6 rounded-lg">
             <img class="h-40 rounded w-full object-cover object-center mb-6"
@@ -224,7 +224,7 @@
 
       <!-- cards for the dislayed -->
 
-      <div class="center-image1">
+      <div class="center-image1" data-aos="zoom-out-up">
         <section class="text-gray-600 body-font">
           <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-wrap -m-4 crousel">
@@ -322,11 +322,11 @@
     </section>
     </section>
     </div>
-    <div class="second">
+    <div class="second" data-aos="fade-up">
       <img src="https://stimg.cardekho.com/images/uploadimages/1698327302079/2nd_card.png" alt="">
     </div>
 
-    <div class="brand-displayed">
+    <div class="brand-displayed" data-aos="slide-up">
       <div class="card" id="Brand">
         <div class="card-body">
           <h5 class="card-title" id="popular">Popular Brands</h5>
@@ -404,3 +404,8 @@
       </div>
     </div>
     <%- include('../includes/footer.ejs') %>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>

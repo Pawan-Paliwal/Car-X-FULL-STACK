@@ -3,14 +3,14 @@ const crypto = require("crypto");
 const { validationResult } = require("express-validator");
 
 const User = require("../models/user");
-const nodemailer = require("nodemailer");
-const transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: "21114843@hitdoon.com",
-    pass: "nljh audx gnav khtm",
-  },
-});
+// const nodemailer = require("nodemailer");
+// const transporter = nodemailer.createTransport({
+//   service: "gmail",
+//   auth: {
+//     user: "21114843@hitdoon.com",
+//     pass: "nljh audx gnav khtm",
+//   },
+// });
 
 exports.getLogin = (req, res, next) => {
   let message = req.flash("error");
@@ -87,12 +87,12 @@ exports.postLogin = (req, res, next) => {
             return req.session.save((err) => {
               console.log(err);
               res.redirect("/");
-              transporter.sendMail({
-                to: email,
-                from: "Pawanpaliwal@gmail.com",
-                subject: "LoginIn succeeded!",
-                html: "<h1> You sucessfully sign up !</h1> <p1> “Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.” --Pawan Paliwal</p1>",
-              });
+              // transporter.sendMail({
+              //   to: email,
+              //   from: "Pawanpaliwal@gmail.com",
+              //   subject: "LoginIn succeeded!",
+              //   html: "<h1> You sucessfully sign up !</h1> <p1> “Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.” --Pawan Paliwal</p1>",
+              // });
             });
           }
           return res.status(422).render("auth/login", {
@@ -122,7 +122,6 @@ exports.postLogin = (req, res, next) => {
 exports.postSignup = (req, res, next) => {
   const email = req.body.email;
   const password = req.body.password;
-  // const confirmPassword = req.body.confirmPassword;
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     return res.status(422).render("auth/signup", {
@@ -149,12 +148,12 @@ exports.postSignup = (req, res, next) => {
     })
     .then((result) => {
       res.redirect("/login");
-      transporter.sendMail({
-        to: email,
-        from: "21114843@hitdoon.com",
-        subject: "signUp succeeded!",
-        html: "<h1> You sucessfully sign up !</h1> <p1> “Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.” --Pawan Paliwal</p1>",
-      });
+      // transporter.sendMail({
+      //   to: email,
+      //   from: "21114843@hitdoon.com",
+      //   subject: "signUp succeeded!",
+      //   html: "<h1> You sucessfully sign up !</h1> <p1> “Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.” --Pawan Paliwal</p1>",
+      // });
     })
     .catch((err) => {
       const error = new Error(err);
@@ -204,15 +203,15 @@ exports.postReset = (req, res, next) => {
       })
       .then((result) => {
         res.redirect("/");
-        transporter.sendMail({
-          to: req.body.email,
-          from: "21114843@hitdoon.com",
-          subject: "Password reset",
-          html: `
-            <p>You requested a password reset</p>
-            <p>Click this <a href="http://localhost:3000/reset/${token}">link</a> to set a new password.</p>
-          `,
-        });
+        // transporter.sendMail({
+        //   to: req.body.email,
+        //   from: "21114843@hitdoon.com",
+        //   subject: "Password reset",
+        //   html: `
+        //     <p>You requested a password reset</p>
+        //     <p>Click this <a href="http://localhost:3000/reset/${token}">link</a> to set a new password.</p>
+        //   `,
+        // });
       })
       .catch((err) => {
         const error = new Error(err);

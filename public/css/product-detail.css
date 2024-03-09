@@ -5,7 +5,7 @@
   padding-top: 4%;
 }
 .flex {
-  margin-bottom: 12px;
+  margin-bottom: 1px;
 }
 .es-acko-link {
   display: block;
@@ -30,7 +30,6 @@
   cursor: pointer;
   width: 40%;
   margin-top: 27px;
-
 }
 .o-cWRslo {
   -webkit-user-select: none;

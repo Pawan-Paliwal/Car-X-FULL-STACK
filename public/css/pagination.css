@@ -1,14 +1,11 @@
-
-
-.pagination{
+.pagination {
   padding-left: 50%;
-    padding-top: 4%;
+  padding-top: 4%;
 }
 
-
-.number{
-    border-radius: 4px;
-background-color: #2a8ded;
-    margin: 3px;
-    padding: 6px;
+.number {
+  border-radius: 4px;
+  background-color: #2a8ded;
+  margin: 3px;
+  padding: 6px;
 }

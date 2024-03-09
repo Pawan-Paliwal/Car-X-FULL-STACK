@@ -1,5 +1,4 @@
-.footer-items
-{
+.footer-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -7,52 +6,44 @@
   margin: 0 auto;
   background: #232f3e;
 }
-.citys{
+.citys {
   padding-top: 12px;
 }
-.footer-items ul
-{
+.footer-items ul {
   list-style: none;
   margin-bottom: 20px;
 }
-.footer-items h3
-{
+.footer-items h3 {
   font-size: 1rem;
   font-weight: 500;
   color: #fff;
   margin: 20px 0 10px 0;
 }
 @media (min-width: 1200px) {
-  .h3, h3
-{
+  .h3,
+  h3 {
     font-size: 1.75rem;
   }
 }
-.footer-items ul
-{
+.footer-items ul {
   list-style: none;
 }
-.footer-items li a
-{
+.footer-items li a {
   color: #ddd;
   font-size: 0.875rem;
 }
-.maharana-logo
-{
+.maharana-logo {
   background-color: #232f3e;
   text-align: center;
 }
-.maharana-logo img
-{
+.maharana-logo img {
   margin-top: 13px;
   margin-bottom: 14px;
 }
-.cityname
-{
+.cityname {
   background-color: #232f3e;
 }
-.cityname ul
-{
+.cityname ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -62,23 +53,19 @@
   font-weight: 500;
   margin-right: 101px;
 }
-.cityname ul li
-{
+.cityname ul li {
   margin: 0px 5px;
   text-decoration: none;
   list-style: none;
 }
-ul li a
-{
+ul li a {
   color: rgb(255, 255, 255);
   font-size: 1rem;
 }
-ul li a
-{
+ul li a {
   text-decoration: none;
 }
-.citys
-{
+.citys {
   display: flex;
   margin-top: -16px;
   padding-bottom: 19px;
@@ -86,31 +73,55 @@ ul li a
   justify-content: center;
   background-color: #232f3e;
 }
-.citys li
-{
+.citys li {
   margin: 0px 5px;
   text-decoration: none;
   list-style: none;
   padding-top: 12px;
   justify-content: center;
 }
-ul li a
-{
+ul li a {
   color: rgb(255, 255, 255);
   font-size: 1rem;
 }
-ul li a
-{
+ul li a {
   text-decoration: none;
 }
-.citys li
-{
+.citys li {
   margin: 0px 5px;
   text-decoration: none;
   list-style: none;
   padding-top: 12px;
   justify-content: center;
 }
-.copyright h6{
+.copyright h6 {
   text-align: center;
+}
+
+.enquiry-now {
+  width: 169px;
+  right: -63px;
+  height: 32px;
+  z-index: 999;
+  background: #007bff;
+  transform: rotate(90deg);
+  top: 60%;
+  box-shadow: 0px 2px 3px #4c4c4c;
+  position: fixed;
+}
+#enquire-now-popup {
+  max-width: 1000px;
+}
+.svg-class {
+  position: absolute;
+  left: 2px;
+  bottom: 1px;
+}
+.enquiry-now a {
+  text-decoration: none;
+  padding: 0px 35px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 700;
 }

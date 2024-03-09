@@ -1,5 +1,4 @@
 const path = require("path");
-
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
@@ -7,8 +6,6 @@ const session = require("express-session");
 const MongoDBStore = require("connect-mongodb-session")(session);
 const flash = require("connect-flash");
 const multer = require("multer");
-const helmet = require("helmet");
-const compression = require("compression");
 
 const errorController = require("./controllers/error");
 const User = require("./models/user");
@@ -95,8 +92,8 @@ app.use(authRoutes);
 //   { flags: "a" }
 // );
 
-app.use(helmet());
-app.use(compression());
+// app.use(helmet());
+// app.use(compression());
 // app.use(morgan("combined", { stream: acsessLogstream }));
 
 app.get("/500", errorController.get500);
@@ -104,8 +101,6 @@ app.get("/500", errorController.get500);
 app.use(errorController.get404);
 
 app.use((error, req, res, next) => {
-  // res.status(error.httpStatusCode).render("500");
-  // res.render("500");
   console.log(error);
   res.status(500).render("500", {
     pageTitle: "Error!",

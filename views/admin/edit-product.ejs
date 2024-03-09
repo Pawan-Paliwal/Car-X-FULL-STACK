@@ -2,8 +2,6 @@
     <link rel="stylesheet" href="/css/forms.css">
     <link rel="stylesheet" href="/css/product.css">
     <style>
-       
-
         .form-sell {
             display: flex;
             justify-content: center;
@@ -74,7 +72,7 @@
 
     <body>
         <%- include('../includes/navigation.ejs') %>
-            <div class=" form-sell">
+            <div class=" form-sell" data-aos="slide-down">
                 <% if(errorMessage) {%>
                     <div class="user-message user-message--error">
                         <%= errorMessage%>
@@ -120,4 +118,4 @@
             </div>
 
             <%- include('../includes/end.ejs') %>
-            <%- include('../includes/footer.ejs') %>
+                <%- include('../includes/footer.ejs') %>

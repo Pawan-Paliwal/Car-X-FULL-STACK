@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Bayon&family=Exo+2:wght@500;600&family=Fresca&family=Lato:wght@100&family=Ledger&family=Open+Sans:wght@300;500&family=Oswald:wght@500&family=Roboto+Condensed:wght@200&family=Rubik:wght@500&family=Teko:wght@500&family=Work+Sans:ital,wght@1,500&family=Ysabeau+SC:wght@200;700&display=swap");
 body {
-  background-color: #bbd7ef;
+  background-image: url(https://media.istockphoto.com/id/1367078593/vector/abstract-gray-modern-background.jpg?s=612x612&w=0&k=20&c=dH7j_YzMSLlwUpU_gZ3OtpD-XnkBEYYiEJ_T6-fjZ64=);
   width: 100vw;
 }
 
@@ -147,7 +147,7 @@ body {
 }
 .bgpicture {
   width: 100vw;
-  height: 23em;
+  height: 17em;
 }
 .s-b:hover {
   opacity: 0.8;
@@ -315,6 +315,15 @@ body {
   .c-5 img {
     width: 10vw;
     height: 12vh;
+  }
+  .c-8 {
+    width: 21vw;
+    padding: 4px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-right: 4vw;
+    max-height: 23rem;
+    min-width: 18rem;
   }
   .Find_Car {
     font-size: 20px;

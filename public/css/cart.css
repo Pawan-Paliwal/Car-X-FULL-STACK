@@ -32,9 +32,7 @@
 .id-3 {
   font-size: 16px;
   font-family: "Work Sans", sans-serif;
-}
-.order-n {
-  margin: 12px 39vw 3% 50vw;
+  margin-bottom: 14px;
 }
 
 .orser-n {
@@ -65,6 +63,11 @@
 .order-p2 {
   font-size: 18px;
 }
+.about-us-our-group-cart p {
+  font-size: 18px;
+  line-height: 1.51;
+  color: #2a8ded;
+}
 .Card {
   height: auto;
   display: flex;
@@ -80,13 +83,24 @@
   white-space: normal;
   font-weight: 700;
 }
-
+.order-n {
+  text-align: center;
+  /* padding: 23px; */
+  margin: 30px;
+}
 .card-text {
   font-size: 18px !important;
   display: inline-block;
   width: 100%;
   white-space: normal;
   font-weight: 700;
+}
+.main-cart {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSreYK6gGpN8tbgPOaODGLonPKsypTi8ZGLqulK6UZJVrg-OsjzCe7EGAJSmrVcdcSoajc&usqp=CAU);
+  height: 89vh;
+  /* background-repeat: no-repeat; */
+  /* max-width: 100vw;
+  max-height: 100vh; */
 }
 .material-symbols-outlined {
   font-family: "Material Symbols Outlined";
@@ -105,8 +119,7 @@
 }
 
 .card-pic {
-  width: 34rem;
-  width: 153rem;
+  width: 60rem;
 }
 .card_flex {
   display: flex;
@@ -260,7 +273,7 @@
 
 @media screen and (max-width: 600px) {
   .order-n {
-    margin: 2px 39vw 0px 41vw;
+    margin: 2px 34vw 0px 41vw;
   }
   .cart__item h1,
   .cart__item h2 {
