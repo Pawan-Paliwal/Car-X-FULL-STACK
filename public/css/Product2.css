@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Bayon&family=Exo+2:wght@500;600&family=Fresca&family=Lato:wght@100&family=Ledger&family=Open+Sans:wght@300;500&family=Oswald:wght@500&family=Quicksand:wght@600;700&family=Roboto+Condensed:wght@200&family=Rubik:wght@500&family=Teko:wght@500&family=Work+Sans:ital,wght@1,500&family=Ysabeau+SC:wght@200;700&display=swap");
-
 #section-2 {
   font-size: 1rem;
   margin-left: 7vw;
@@ -11,7 +10,6 @@
   font-weight: 400;
   font-family: "Work Sans", sans-serif;
 }
-
 .new-car-span {
   color: rgb(2, 136, 209);
   cursor: pointer;
@@ -23,6 +21,9 @@
 #firstOne {
   margin-top: 41px;
   width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .prod-dis {
   display: flex;

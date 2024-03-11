@@ -309,6 +309,7 @@ exports.DeleteProduct = (req, res, next) => {
   const prodId = req.params.productId;
   Product.deleteOne({ _id: prodId, userId: req.user._id })
     .then(() => {
+      res.redirect("/products");
       console.log("DESTROYED PRODUCT");
       res.status(200).json({
         message: "Success",

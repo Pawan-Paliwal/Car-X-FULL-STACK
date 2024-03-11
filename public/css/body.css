@@ -112,10 +112,10 @@ body {
   height: 16vh;
 }
 #Brand {
-  background-color: #bbd7ef;
-  width: 90vw;
-  height: 56vh;
+  width: 100vw;
   margin: 0px auto;
+  display: flex;
+  justify-content: center;
 }
 .middle {
   display: flex;
@@ -141,13 +141,17 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 .middle img {
-  width: 76vw;
+  width: 67rem;
   height: 17rem;
   margin-bottom: 39px;
 }
 .bgpicture {
   width: 100vw;
-  height: 17em;
+  height: 25em;
+}
+.bgpicture img {
+  height: 25rem;
+  width: 100%;
 }
 .s-b:hover {
   opacity: 0.8;
@@ -169,6 +173,8 @@ body {
 }
 .second {
   width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 .s-b {
   width: 12%;
@@ -216,7 +222,10 @@ body {
     display: none;
   }
   .bgpicture {
-    height: 70vh;
+    height: 18rem;
+  }
+  .bgpicture img {
+    height: 18rem;
   }
 }
 @media screen and (max-width: 970px) {
@@ -295,6 +304,9 @@ body {
   .bgpicture {
     height: 53vh;
   }
+  .bgpicture img {
+    height: 53vh;
+  }
   .crousel {
     display: flex;
     flex-wrap: nowrap;
@@ -342,6 +354,9 @@ body {
     margin: -10px 0.6rem 0.9rem 0.8rem;
   }
   .bgpicture {
+    height: 12vh;
+  }
+  .bgpicture img {
     height: 12vh;
   }
 }

@@ -46,6 +46,10 @@
 .img-select {
   width: 87px;
 }
+.merging {
+  display: flex;
+  justify-content: center;
+}
 .scale-essay {
   display: flex;
   justify-content: flex-end;
